@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@living-knowledge-os/ui": ["packages/ui/src"],
+      "@living-knowledge-os/types": ["packages/types/src"],
+      "@living-knowledge-os/shared": ["packages/shared/src"],
+      "@living-knowledge-os/config": ["packages/config/src"]
+    }
+  },
+  "include": ["apps/**", "packages/**", "services/**"],
+  "exclude": ["node_modules", "dist", "build", ".next"]
+}
